@@ -1,7 +1,7 @@
 import random
 
 def get_choices():
-    player_choice = input("Enter a Choice (rock, paper, scissors, exit):")
+    player_choice = input("\nEnter a Choice (rock, paper, scissors, exit):")
     if player_choice in ("rock","paper","scissors","exit"):
         options = ["rock","paper","scissors"]
         computer_choice = random.choice(options)
@@ -33,6 +33,7 @@ def check_win(player, computer):
         else:
             return 'p',"Scissors cut paper! You win."
 p,c,g=0,0,0
+print("Welcome, To rock,paper,scissors game")
 game = input("Enter \"play\" or \"exit\":")
 while game == "play":
     choices = get_choices()
